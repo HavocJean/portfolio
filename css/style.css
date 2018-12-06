@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+.contato h4, .sobre h4, .portfolio h4, .banner h4 {
+	font-size: 34px;
+}
+
+hr {
+	width: 200px;
+	background-color: black;
+}
+
+.menuzao {
+	height: 60px;
+	position: fixed;
+	background-color: #000;
+	z-index: 999999;
+}
+
+nav a {
+	color: #FFF;
+}
+
+nav a:hover {
+	color: #8da4c4;
+}
+
+.banner {
+	height: 550px;
+	background-image: url('../imgs/program3.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	width: 100%;
+}
+
+.banner h4, .banner h5 {
+	color: #000;
+}
+
+.imagem_banner {
+	padding-top: 40px;
+}
+
+.texto_banner {
+	padding-top: 40px;
+}
+
+.portfolio {
+	height: 800px;
+	padding-top: 60px;
+	background-color: #333333;
+	color: #FFF;
+}
+
+.img_port img {
+	padding: 0 1%;
+	margin-bottom: 40px;
+}
+
+.img_port img:hover {
+	cursor: pointer;
+}
+
+.sobre {
+	height: 700px;
+	padding-top: 60px;
+	background-color: #f6f6f6;
+	color: #000;
+}
+
+.contato {
+	height: 650px;
+	padding-top: 60px;
+	background-color: #333333;
+	color: #FFF;
+}
+
+.rodape {
+	height: 140px;
+	padding-top: 40px;
+	color: #FFF;
+	background-color: black;
+}
+
+.icones a img {
+	margin-left: 10px;
+}
+
+.text_rodape {
+	padding-top: 40px;
+}
+
+@media (max-width: 1200px;){
+	
+}
