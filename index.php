@@ -1,136 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Jean</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/art.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script rel="javascript" src="js/script.js"></script>
+    <title>Jean Marques</title>
 </head>
 <body>
-	<div class="container-fluid menuzao">
-		<div class="container">
-			<nav class="navbar navbar-expand-sm">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Jean Marques</a>
-				</div>
-
-				<ul class="nav navbar-nav ml-auto">
-				  <li class="nav-item">
-				    <a class="nav-link" href="#port">Portfolio</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#sob">Sobre</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#cont">Contato</a>
-				  </li>
+        <nav class="menutop">
+            <div class="topesquerda">
+				<a class="titulo" href="#">Jean Marques</a>
+			</div>
+            <div class="topdireita">
+				<ul>
+				  <li><a href="#cont">Contato</a></li>
+				  <li><a href="#port">Portfólio</a></li>
+				  <li><a href="#sob">Sobre</a></li>
 				</ul>
-			</nav>
+            </div>
+        </nav>
+        <div style="height:60px;"></div>
+        <div class="banner">
+            <div class="fotobanner">
+                <img src="imgs/teste.jpg" alt="jeanmarques" height="350px">
+                <h1>Web Full Stack</h1>
+				<h2>HTML - CSS - PHP - JS - MySql - Jquery - Bootstrap</h2>
+            </div>
+        </div>
+        <div class="sobre" id="sob" style="padding-top:20px;">
+                <h2>Sobre</h2>
+                <hr>
+            <div class="esquerdasobre">
+                <canvas id="myChart" style="width:100%;height:400px;"></canvas>
+            </div>
+            <div class="direitasobre">
+            <p style="margin-top:100px;">Estudante/freelancer na área de programação web full stack(front-end, back-end) desenvolvendo projetos web pessoais para desenvolver meus conhecimentos e crescer como programador ainda mais.</p>
+            <p>Anteriormente trabalhava na área de informática como técnico em manutenção de computadores e notebook. E tenho como formação design gráfico.</p>
+            </div>
+        </div>
+
+        <div class="portfolio" id="port" style="padding-top:20px;">
+            <h2>Portfólio</h2>
+            <hr>
+            <div class="imgsportfolio">
+                <a href="javascript:;" class="galeria"><img src="imgs/temp.jpg"/></a>
+                <a href="javascript:;" class="galeria"><img src="imgs/lester.jpg" /></a>
+                <a href="javascript:;" class="galeria"><img src="imgs/portfalse.jpg" /></a>
+                <a href="javascript:;" class="galeria"><img src="imgs/sisteminhalara.jpg" /></a>
+            </div>
+            <div class="bgbox"></div>
+            <div class="divbox">
+                <img src="" width="100%" /><br>
+                <button class="fechar">Fechar</button>
+            </div> 
+        </div>
+
+        <div class="contato" id="cont" style="padding-top:20px;">
+            <h2>Contato</h2>
+            <hr>
+            <form method="post" action="index.php">
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input name="email" type="email" id="email" name="email" placeholder="email@servidor.com">
+                </div>
+                <div class="nome">
+                    <label for="nome">Nome:</label><br>
+                    <input name="nome" type="text" id="nome" name="nome" placeholder="Nome e sobrenome">
+                </div>
+                <div class="assunto">
+                    <label for="assunto">Assunto:</label><br>
+                    <input name="assunto" type="text" id="assunto" placeholder="Assunto da mensagem">
+                </div>
+                <div class="wpp">
+                    <label for="telcel">Wpp/Cel:</label><br>
+                    <input name="tel" type="tel" id="telcel" placeholder="(99) 99999-9999">
+                </div>
+                <div class="msg">
+                    <label for="texttodo">Mensagem:</label><br>
+                    <textarea name="textomsg" id="textotodo" rows="4" type="text"  placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button class="enviar" type="submit" name="submit" value="submit">Enviar</button>
+        </div>
+
+    <footer>
+		<div class="footerinterno">
+			<a href="https://www.facebook.com/jean.marques.19" target="_blank"><img src="imgs/facebook.png"></a>
+			<a href="https://www.linkedin.com/in/jean-marques-de-araujo-82886b173/" target="_blank"><img src="imgs/linkedin.png"></a>
+			<a href="https://www.instagram.com/havocjean/" target="_blank"><img src="imgs/inst10.png" width="32px;"></a>
 		</div>
-	</div>
-
-	<div style="height:60px;background-color:black;"></div>
-
-	<div class="container-fluid banner">
-		<div class="container text-center">
-			<div class="imagem_banner">
-				<img src="imgs/teste.jpg" class="rounded-circle" alt="jeanmarques" height="350px">
-			</div>
-			<div class="texto_banner">
-				<h4>Web Full Stack</h4>
-				<h5>HTML - CSS - PHP - JS</h5>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid portfolio" id="port">
-		<div class="container text-center">
-			<h4 class="text-center">Portfolio</h4>
-				<hr style="background-color:white">
-
-			<div class="img_port">
-				<img src="imgs/temp.jpg" class="rounded" alt="template" height="250px">
-
-				<img src="imgs/temp.jpg" class="rounded" alt="template" height="250px">
-
-				<img src="imgs/temp.jpg" class="rounded" alt="template" height="250px">
-			</div>
-
-			<div class="img_port">
-				<img src="imgs/temp.jpg" class="rounded" alt="template" height="250px">
-
-				<img src="imgs/temp.jpg" class="rounded" alt="template" height="250px">
-
-				<img src="imgs/temp.jpg" class="rounded" alt="template" height="250px">
-			</div>
-		</div>
-	</div>
-			<div class="parallax"></div>
-	<div class="container-fluid sobre" id="sob">
-		<div class="container">
-			<h4 class="text-center">Sobre</h4>
-				<hr>
-
-			<div class="row text-center">
-				<div class="col text-left">
-					<canvas id="myChart" style="width:100%;height:400px;"></canvas>
-				</div>
-				<div class="col text-left"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid contato" id="cont">
-		<div class="container">
-			<h4 class="text-center">Contato</h4>
-				<hr style="background-color:white">
-			<form method="POST" action="index.php">
-				<div class="form-group row">
-					<div class="col-6">
-						<label for="email">Email:</label>
-						<input name="email" type="email" class="form-control" id="email" placeholder="email@email.com">
-					</div>
-					<div class="col-6">
-						<label for="nome">Nome:</label>
-						<input name="nome" type="text" class="form-control" id="nome" placeholder="Nome e Sobrenome">
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-6">
-					    <label for="assunto">Assunto:</label>
-					    <input name="assunto" type="text" class="form-control" id="assunto" placeholder="Escreva o assunto">
-					</div>
-					<div class="col-6">
-					    <label for="telcel">Tel/Cel:</label>
-					    <input name="tel" type="tel" class="form-control" id="telcel" placeholder="Número para contato">
-					</div>
-				 </div>
-				<div class="form-group">
-   					<label for="textotodo">Escreva sua mensagem:</label>
-    				<textarea name="textomsg" class="form-control" id="textotodo" rows="4"></textarea>
- 				</div>
- 				<button type="submit" name="submit" value="submit" class="btn btn-outline-light" style="width:120px;">Enviar</button>
-			</form>
-		</div>
-	</div>
-
-	<footer class="container-fluid rodape">
-		<div class="container">
-			<div class="row icones" style="text-align:center;">
-				<div class="col ">
-					<a href="https://www.facebook.com/jean.marques.19"><img src="imgs/facebook.png"></a>
-					<a href="#"><img src="imgs/google.png"></a>
-					<a href="https://www.linkedin.com/in/jean-marques-de-araujo-82886b173/"><img src="imgs/linkedin.png"></a>
-					<a href="https://www.instagram.com/havocjean/"><img src="imgs/inst10.png" width="32px;"></a>
-				</div>
-			</div>
-		</div>
-			<div class="text-center text_rodape">© Todos os direitos reservados 2018. Jean Marques.</div>
+			<p style="margin-top:40px;">© Todos os direitos reservados. Jean Marques, 2019.</p>
 	</footer>
+
+    
 </body>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <script>
 	var ctx = document.getElementById("myChart");
 	var myChart = new Chart(ctx, {
@@ -139,8 +107,8 @@
 	        labels: ["HTML", "CSS", "MySql", "PHP", "Javascript", "Laravel"],
 	        datasets: [
 	        {
-	            label: 'Skills 2018',
-	            data: [9, 8, 5, 7, 4, 2],
+	            label: 'Skills 2019',
+	            data: [8, 6, 5, 7, 5, 6],
 	            backgroundColor: [
 	                'rgba(224, 224, 224, 0.5)'
 	            ],
